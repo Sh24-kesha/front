@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.journey-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.task-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+.task-header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.task-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.status-badge {
+  background-color: #28a745;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  float: right;
+}
+
+.asset-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e9ecef;
+}
+
+.asset-container iframe,
+.asset-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expandable {
+  padding: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.expandable.expanded {
+  max-height: 200px;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.expand-toggle {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.expand-toggle::after {
+  content: '▼';
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.expand-toggle.expanded::after {
+  transform: rotate(180deg);
+}
+
+.status-not_started { background-color: #dc3545; }
+.status-in_progress { background-color: #ffc107; color: #000; }
+.status-completed { background-color: #28a745; }

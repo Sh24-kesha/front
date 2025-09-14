@@ -1,0 +1,45 @@
+{
+  "status": "published",
+  "tasks": [
+    {
+      "id": "task1",
+      "title": "Peda Tech for Teachers",
+      "description": "Explore the world of management! In this role, leading a project through initiation, planning, execution, monitoring/controlling and completion. How do you want to manage each and every step of your life?",
+      "asset": {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/gG5yBX7roes?si=Rww0J86rh0wcnf2z" 
+      },
+      "status": "not_started"
+    },
+    {
+      "id": "task2",
+      "title": "Better By Design Approach",
+      "description": "Description: Watch this video and build your own key. Broadens while watching video and build your own key.",
+      "asset": {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/PBYfllNg4R4?si=wRS3aV4U2enxtY6Q" 
+      },
+      "status": "in_progress"
+    },
+    {
+      "id": "task3",
+      "title": "Agile Methodology",
+      "description": "Agile is a project management approach that emphasizes flexibility, collaboration, and customer feedback. It breaks work into smaller iterations called sprints.",
+      "asset": {
+        "type": "image",
+        "url": "agile.jpg" 
+      },
+      "status": "completed"
+    },
+    {
+      "id": "task4",
+      "title": "Story of startup",
+      "description": "Create visual stories to map user journeys. This helps in understanding project flow and stakeholder needs.",
+      "asset": {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/JMwbklESL90?si=PJ8VOR-TIY4ltcRD" 
+      },
+      "status": "completed"
+    }
+  ]
+}
